@@ -1,0 +1,760 @@
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    /*speak: none;*/
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .holberton_school-icon-arrow_1:before {
+    content: "\e900";
+  }
+  .holberton_school-icon-arrow_2:before {
+    content: "\e901";
+  }
+  .holberton_school-icon-arrow_3:before {
+    content: "\e902";
+  }
+  .holberton_school-icon-arrow_4:before {
+    content: "\e903";
+  }
+  .holberton_school-icon-arrow_5:before {
+    content: "\e904";
+  }
+  .holberton_school-icon-check:before {
+    content: "\e905";
+  }
+  .holberton_school-icon-ic_bag:before {
+    content: "\e906";
+  }
+  .holberton_school-icon-ic_cart:before {
+    content: "\e907";
+  }
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  .holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+  }
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+  .holberton_school-icon-ic_laptop:before {
+    content: "\e90b";
+  }
+  .holberton_school-icon-ic_money:before {
+    content: "\e90c";
+  }
+  .holberton_school-icon-ic_music:before {
+    content: "\e90d";
+  }
+  .holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+  }
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  .holberton_school-icon-ic_video:before {
+    content: "\e910";
+  }
+  .holberton_school-icon-menu:before {
+    content: "\e911";
+  }
+  .holberton_school-icon-search_1:before {
+    content: "\e912";
+  }
+  .holberton_school-icon-search_2:before {
+    content: "\e913";
+  }
+  .holberton_school-icon-star:before {
+    content: "\e914";
+  }  
+  
+  /* colors */
+  :root {
+    --white-color: #FFFFFF;
+    --orange-red-color: #FF6565;
+    --grey-color: #979797;
+    --navy-color: #071629 ;    
+  }
+  
+  /* general */
+  *, ::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: "Source Sans Pro", sans-serif;
+    position: relative;
+  }
+  
+  /* --------------------header and hero piece--------------------*/
+  nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .firstpage {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: var(--white-color);
+    stroke: var(--grey-color);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    width: 1020px;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    width: 161px;
+    height: 32px;
+    height: auto;
+    display: block;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-between;
+    gap: 41px;
+    width: 255px;
+    height: 15px;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: var(--orange-red-color);
+    cursor: pointer;
+  }
+  
+  main {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    max-width: 1000px;
+  }
+  
+  .article {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    align-items: center;
+    padding-top: 300px;
+  }
+  
+  .article .article-titles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  
+  .article-titles h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto; 
+  }
+  
+  .article-titles h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .description p {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    width: 637px;
+    height: 100px;
+    align-content: center;
+    margin: auto;
+    padding-top: 60px;
+  }
+  
+  button {
+    background: var( --orange-red-color);
+    padding: 13px 31px;
+    border-radius: 22px;
+    color: var(--white-color);
+    width: auto;
+    height: 44px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .button1 {
+    padding-top: 50px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  .holberton_school-icon-menu {
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.3s ease-in;
+  }
+  
+  .toggle-btn {
+    color: var(--white-color);
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 60px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+  max-height: 0;
+  z-index: 100;
+  transition: max-height 0.5s ease-out;
+  }
+  
+  .dropdown-menu li {
+  padding: 10px;
+  align-self: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none; 
+  }
+  
+  .dropdown-menu ul {
+  list-style-type: none;
+  }
+  
+  .dropdown-menu li a {
+  text-decoration: none;
+  color: var(--white-color);
+  }
+  
+  /* ----------Media query for small screens----------*/
+  
+  @media screen and (max-width: 480px) {
+    .navigationbar {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .main {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 357px;
+    }
+    .description p {
+        width: 335px;
+    }
+    .article {
+        padding-top: 250px;
+    }
+  }
+  
+  /* ----------Hide navigation links & show hamburger icon on small screens---------- */
+  
+  @media screen and (max-width: 480px) {
+    .navigationlist {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    #menu-toggle:checked + .dropdown-menu {
+      display: block;
+      animation: slide-down 0.5s ease forwards;
+    }
+  }
+  
+  /* ----------Adding small screens animations---------- */ 
+  
+  #menu-toggle {
+  display: none;
+  }
+  
+  #menu-toggle:checked + .toggle-btn + .dropdown-menu {
+  max-height: 100px;
+  } 
+  
+  
+  /* --------------------What we do section-------------------- */
+  
+  .what-we-do-section {
+      background-color: var(--white-color);
+      color: var(--navy-color);
+      padding: 0 100px 0 100px;
+  }
+  
+  .what-we-do-container {
+      margin: auto;
+      max-width: 1000px;
+      padding: 100px 0 100px 0;
+  }
+  
+  .what-we-do-components {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      gap: 80px;
+  }
+  
+  .what-we-do-text {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+  }
+  
+  .what-we-do-text h1 {
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+  }
+  
+  .what-we-do-text p {
+      font-size: 16px;
+      font-weight: normal;
+      text-align: center;
+      align-content: center;
+      width: 637px;
+      height: 100px;  
+  }
+  
+  .what-we-do1 {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      align-items: end;
+      gap: 58px;
+      width: 100%;
+  }
+  
+  .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  
+  .box img {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: auto;
+      margin: auto;
+  }
+  
+  .box h3 {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+  }
+  
+  .box p {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      align-content: center;
+  }
+  
+  .box span {
+      color: var(--orange-red-color);
+      font-size: 60px;
+  }
+  
+  /* ----------Media query for small screens---------- */
+  
+  @media (max-width: 480px) {
+      .what-we-do1 {
+          grid-template-columns: 1fr;
+      }
+      .what-we-do-text p {
+          width: 335px;
+      }
+  }
+  
+  /* ----------Media query for medium  screens---------- */
+  
+  @media screen and (480px < width < 768px ) {
+      .what-we-do1 {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .what-we-do-text p {
+          padding: 0 5px 0 5px;
+      }
+  }
+  
+
+/* --------------------Our results section-------------------- */
+
+.results-section {
+    background-image: url(images/headphones_hero_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: var(--white-color);
+    stroke: var(--grey-color);
+    padding: 0 100px 0 100px;
+}
+
+.contain-results {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.results-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.results-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.results-info h1 {
+    align-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.results-info p {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    align-content: center;
+    width: 637px;
+    height: 100px;
+}
+
+.pent {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: end;
+    gap: 60px;
+    width: 100%;
+}
+
+.pent-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pentagon img {
+    width: 190px;
+    height: 190px;
+}
+
+.pent-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    z-index: 50;
+}
+
+.pent-text h1 {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.pent-text p {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* ----------Media query for small screens---------- */
+
+@media (max-width: 480px) {
+    .pent {
+        grid-template-columns: 1fr;
+    }
+    .results-info p {
+        width: 335px;
+    }
+    .results-section {
+        height: auto;
+    }
+    .results-component {
+        gap: 90px;
+    }
+}
+
+/* ----------Media query for medium  screens---------- */
+
+@media screen and (480px < width < 768px ) {
+    .pent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .results-section {
+        height: auto;
+    }
+}
+
+
+
+/* --------------------Contact us section-------------------- */
+
+.contact-us {
+    background-color: var(--white-color);
+    color: var(--navy-color);   
+    padding: 0 100px 0 100px;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 400px;
+    padding: 100px 0 100px 0;
+  
+}
+
+.form-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    width: 335px;
+}
+.form-container {
+    margin: auto;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;   
+    max-width: 400px;
+    padding: 80px 0 80px 0;
+}
+
+.form input {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    border-style: none;
+    padding: 40px 0 10px 0;
+    border-bottom: 1px solid var(--grey-color);
+    width: 335px;
+}
+
+.form-container input::placeholder {
+    color: var(--navy-color);
+}
+
+.button2 {
+    padding: 30px 0;
+}
+
+/* ----------Media query for small screens---------- */
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/* --------------------Footer section-------------------- */
+
+footer {
+    background-color: var(--navy-color);
+    color: var(--white-color);
+}
+
+.footer-container {
+    margin: auto;
+    max-width: 1000px;
+    padding: 100px 0 30px 0;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    width: 161px;
+    height: 32px;
+    display: block;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 130px;
+    height: 30px;
+}
+
+.footer-list li a:hover {
+    cursor: pointer;
+}
+
+.footer-container p {
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;  
+}
+
+.social-icons span {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.footer-list li {
+    display: inline-block;
+}
+
+.footer-list li a {
+    list-style-type: none;
+
+}
+.holberton_school-icon-ic_facebook:before, .holberton_school-icon-ic_instagram:before, .holberton_school-icon-ic_twitter:before {
+    display: inline-block;
+}
+
+
+
+/* ----------Media query for small screens----------*/
+
+.footer-top {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+    .social-icons {
+        padding-bottom: 40px;
+    }
+    .footer-container p {
+        padding-top: 40px;
+    }
+    
+}
+
+/* ----------Media query for medium screens----------*/
+
+@media screen and (480px < width < 768px )  {
+    .footer-top {
+        padding: 0 20px 0 20px;
+    }  
+}
